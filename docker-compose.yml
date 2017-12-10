@@ -39,7 +39,7 @@ services:
         restart: always
         volumes:
             # Data persistance
-            # sudu mkdir -p /opt/influxdb/data
+            # sudo mkdir -p /opt/influxdb/data
             - /opt/influxdb/data:/var/lib/influxdb
             - /opt/influxdb/influxdb.conf:/etc/influxdb/influxdb.conf:ro
             - /etc/localtime:/etc/localtime:ro
